@@ -5,7 +5,6 @@ const API_key = "c3b214593b0229751cae1e5773975c42";
 
 export const fetchWeather = async (query, onError) => {
   try {
-    console.log(query);
     const { data } = await axios(`${URL}${query}&appid=${API_key}`);
     return data;
   } catch (err) {
